@@ -1,0 +1,13 @@
+@import "util/spacers";
+@import "util/font";
+@import "util/position";
+@import "util/display";
+@import "util/flexbox";
+@import "util/length";
+@import "util/border";
+
+
+.stretched-link {
+  @include stretchedLink;
+}
+

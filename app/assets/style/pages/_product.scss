@@ -1,0 +1,54 @@
+.banner-product {
+  width: 50%;
+  background: scroll center center / cover no-repeat;
+  height: 304px;
+  &-optical-1 {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-1.png);
+  }
+  &-optical-2 {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-2.png);
+  }
+  &-sunglasses-1 {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-3.png);
+  }
+  &-sunglasses-2 {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-2-color.png);
+  }
+
+}
+
+.lh-sm-product-subtitle {
+  @include breakpoint($sm) {
+    line-height: 36px;
+  }
+}
+
+
+.product {
+  &-card {
+    &-info {
+      @include breakpoint($sm) {
+        line-height: 30px;
+      }
+    }
+    &-image {
+      object-fit: cover;
+      height: 164px;
+    }
+  }
+  &-version {
+    width: $spacer * 6;
+    height: $spacer * 6;
+    @include breakpoint($sm) {
+      width: $spacer * 4;
+      height: $spacer * 4;
+    }
+  }
+}
+
+.version-brown {
+  background-color: #5F3E2D;
+}
+.version-brown-light {
+  background-color: #B75929;
+}

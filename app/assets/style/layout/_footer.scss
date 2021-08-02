@@ -1,0 +1,51 @@
+.footer {
+  padding: $spacer * 10 0;
+  @include breakpoint($md) {
+    padding: $spacer * 8 0;
+  }
+  @include breakpoint($sm) {
+    padding: $spacer * 6 0;
+  }
+}
+
+
+.footer__nav {
+  &-item {
+    margin-right: $spacer * 10;
+    @include breakpoint($footer-nav) {
+      margin-right: $spacer * 5;
+    }    
+  }
+  &-link {
+    display: block;
+    padding: $spacer 0;
+  }
+}
+.footer__contacts {
+  &-item {
+    margin-left: $spacer * 8;
+    @include breakpoint($sm) {
+      margin-left: $spacer * 6;
+    }
+  }
+  &-image {
+    @include breakpoint($nav-col) {
+      height: 24px;
+    }
+  }
+}
+.footer__policy {
+  &-item {
+    margin-left: $spacer * 8;
+    @include breakpoint($md) {
+      margin-left: $spacer * 6;
+    }
+    @include breakpoint($sm) {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+

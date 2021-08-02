@@ -1,0 +1,14 @@
+.p {
+  &-absolute {
+    position: absolute;
+  }
+  &-relative {
+    position: relative;
+  }
+  &-sm-relative {
+    position: relative;
+  }
+  &-sm-absolute {
+    position: absolute;
+  }
+}

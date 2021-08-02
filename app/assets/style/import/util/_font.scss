@@ -1,0 +1,65 @@
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-end {
+    text-align: right;
+  }
+}
+
+.text-size-inherit {
+  font-size: inherit;
+}
+
+.lh-sm-30 {
+  @include breakpoint($sm) {
+    line-height: 30px;
+  }
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+@each $key, $value in $font-weights {
+  .weight-#{$key} {
+    font-weight: $value;
+  }
+}
+
+@each $key, $value in $font-sizes {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+
+@media (max-width: $md) {
+  @each $key, $value in $font-sizes {
+    .fs-md-#{$key} {
+      font-size: $value;
+    };
+  }
+
+
+  @each $key, $value in $font-weights {
+    .weight-md-#{$key} {
+      font-weight: $value;
+    }
+  }
+}
+@media (max-width: $sm) {
+  @each $key, $value in $font-sizes {
+    .fs-sm-#{$key} {
+      font-size: $value;
+    }
+  }
+  @each $key, $value in $font-weights {
+    .weight-sm-#{$key} {
+      font-weight: $value;
+    }
+  }
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}

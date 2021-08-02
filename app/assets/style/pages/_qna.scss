@@ -1,0 +1,10 @@
+.qna__title-sub {
+  line-height: 63px;
+}
+
+.qna__question__title  {
+  line-height: 23px;
+  @include breakpoint($sm) {
+    line-height: 1.5;
+  }
+}
