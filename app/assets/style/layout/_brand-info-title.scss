@@ -1,8 +1,0 @@
-.brand-info-title {
-  line-height: 80px;
-  border-left: 8px solid #9F1213;
-  padding-left: $spacer * 4;
-  @include breakpoint($sm) {
-    border-width: 4px;
-  }
-}
